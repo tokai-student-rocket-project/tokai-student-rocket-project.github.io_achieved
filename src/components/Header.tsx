@@ -3,12 +3,12 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" sticky="top" bg="white">
+    <Navbar expand="lg" fixed="top" bg="dark" variant="dark">
       <Container fluid>
         <Navbar.Brand href="/" as={Link}>
           <a>
             <img
-              src="/images/logo.png"
+              src="/images/logo.svg"
               height="auto"
               width="250"
               alt="Tokai Student Rocket Project"
