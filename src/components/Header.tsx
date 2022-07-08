@@ -11,7 +11,7 @@ const Header = () => {
           <a>
             <img
               src="/images/logo.svg"
-              height="46"
+              height="46px"
               width="auto"
               alt="Tokai Student Rocket Project"
             />
