@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import styles from "../styles/Header.module.scss";
 
 const Header = () => {
   return (
@@ -37,29 +39,29 @@ const Header = () => {
               <Nav.Link>LINK</Nav.Link>
             </Link>
           </Nav>
-          <Nav className="ms-auto pe-md-5">
-            <Nav.Link
+          <Navbar.Text className="ms-auto pe-md-5">
+            <a
               href="https://twitter.com/Tokai_SRP"
               target="_brank"
               rel="noreferrer noopener"
             >
-              Twitter
-            </Nav.Link>
-            <Nav.Link
+              <FaTwitter className={styles["react-icon"]} />
+            </a>
+            <a
               href="https://www.instagram.com/tokai_srp/"
               target="_brank"
               rel="noreferrer noopener"
             >
-              Instagram
-            </Nav.Link>
-            <Nav.Link
+              <FaInstagram className={styles["react-icon"]} />
+            </a>
+            <a
               href="https://www.youtube.com/c/TokaiSRP"
               target="_brank"
               rel="noreferrer noopener"
             >
-              Youtube
-            </Nav.Link>
-          </Nav>
+              <FaYoutube className={styles["react-icon"]} />
+            </a>
+          </Navbar.Text>
         </Navbar.Collapse>
       </Container>
     </Navbar>
