@@ -5,7 +5,7 @@ import styles from "../styles/Header.module.scss";
 
 const Header = () => {
   return (
-    <Navbar expand="lg" fixed="top" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
       <Container fluid>
         <Navbar.Brand href="/" as={Link}>
           <a>
