@@ -23,11 +23,11 @@ const Header = () => {
             <Link href="/about" passHref>
               <Nav.Link>ABOUT</Nav.Link>
             </Link>
-            <Link href="/rocket" passHref>
-              <Nav.Link>ROCKET</Nav.Link>
+            <Link href="/vehicle" passHref>
+              <Nav.Link>VEHICLE</Nav.Link>
             </Link>
-            <Link href="/project" passHref>
-              <Nav.Link>PROJECT</Nav.Link>
+            <Link href="/mission" passHref>
+              <Nav.Link>MISSION</Nav.Link>
             </Link>
             <Link href="/news" passHref>
               <Nav.Link>NEWS</Nav.Link>
