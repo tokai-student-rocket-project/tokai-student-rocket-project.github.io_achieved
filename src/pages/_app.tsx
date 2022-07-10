@@ -13,6 +13,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       <DefaultSeo
         title="東海大学学生ロケットプロジェクト"
         description="東海大学学生ロケットプロジェクトの紹介及び活動報告を行うサイトです。"
+        dangerouslySetAllPagesToNoIndex={true}
       />
       <Layout>
         <Component {...pageProps} />
