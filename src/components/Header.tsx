@@ -34,8 +34,7 @@ const Header = () => {
           <a onClick={handleClickLogo}>
             <img
               src="/images/logo.svg"
-              height="46px"
-              width="auto"
+              className={styles["logo"]}
               alt="Tokai Student Rocket Project"
             />
           </a>
