@@ -19,8 +19,8 @@ const Header = () => {
         <Navbar.Toggle />
         <Navbar.Collapse>
           <Nav className="ps-md-5">
-            <Link href="/about" passHref>
-              <Nav.Link className={styles["nav-link"]}>ABOUT</Nav.Link>
+            <Link href="/team" passHref>
+              <Nav.Link className={styles["nav-link"]}>TEAM</Nav.Link>
             </Link>
             <Link href="/vehicle" passHref>
               <Nav.Link className={styles["nav-link"]}>VEHICLE</Nav.Link>
