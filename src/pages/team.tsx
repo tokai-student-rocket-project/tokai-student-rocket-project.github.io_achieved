@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import { Team } from "../components/pages/Team/";
 
-const Team: NextPage = () => {
-  return <div>Team</div>;
+const TeamPage: NextPage = () => {
+  return <Team />;
 };
 
-export default Team;
+export default TeamPage;
