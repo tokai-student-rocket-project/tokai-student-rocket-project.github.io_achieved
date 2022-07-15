@@ -1,43 +1,50 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { Button } from "react-bootstrap";
-import styles from "./Top.module.scss";
+import { Col, Container, Row } from "react-bootstrap";
 
 export const Top = () => {
   return (
-    <Parallax pages={3.5} className={styles["wrapper"]}>
-      <ParallaxLayer sticky={{ start: 0, end: 1.5 }}>
-        <img alt="background" src="/images/background.png" />
-      </ParallaxLayer>
-      <ParallaxLayer sticky={{ start: 1, end: 1.5 }}>
-        <div className={styles["color-area"]}></div>
-      </ParallaxLayer>
-      <ParallaxLayer
-        sticky={{ start: 1, end: 1.5 }}
-        className={styles["content-container"]}
-      >
-        <div>
-          <h1 style={{ fontSize: "72px" }}>
-            TOKAI
-            <br />
-            STUDENT
-            <br />
-            ROCKET
-            <br />
-            PROJECT
-          </h1>
-        </div>
-      </ParallaxLayer>
-      <ParallaxLayer offset={2.5}>
-        <img alt="engine" src="/images/engine.jpg" />
-      </ParallaxLayer>
-      <ParallaxLayer offset={2.5} className={styles["content-container"]}>
-        <div>
-          <h1 style={{ fontSize: "64px", margin: "0 0 15%" }}>Combustion</h1>
-          <Button size="lg" variant="outline-light">
-            LEARN MORE
-          </Button>
-        </div>
-      </ParallaxLayer>
-    </Parallax>
+    <div>
+      <img
+        src="https://fakeimg.pl/1920x1080/?text=TSRP&font=noto"
+        alt="tsrp"
+        style={{ height: "auto", width: "100%", objectFit: "cover" }}
+      />
+      <Container style={{ padding: "64px 0" }}>
+        <Row>
+          <Col lg={6}>
+            <div style={{ color: "white" }}>
+              <p style={{ marginBottom: "32px" }}>
+                TSRPは手作りで低価格なロケット開発の場を学生に提供することで、学生が机上の勉学では学べない、
+                宇宙理工学の知識・技術を修得させ、将来の宇宙技術者を養成することを目的として1995年に設立されました。
+                ロケットの設計・制作、搭載計器の動作試験、実験から得られたデータ解析など多岐に渡るロケットミッションの活動を通じて、
+                技術面の向上だけではなく、マネジメント力、メンバーとの協調性、コミュニケーション能力など、学生の社会性の育成も目的としています。
+              </p>
+            </div>
+          </Col>
+
+          <Col lg={6}>
+            <img
+              src="https://fakeimg.pl/1920x1080/?text=TSRP&font=noto"
+              alt="tsrp"
+              style={{ height: "auto", width: "100%", objectFit: "cover" }}
+            />
+          </Col>
+        </Row>
+      </Container>
+      <img
+        src="https://fakeimg.pl/1920x1080/?text=Mechanism&font=noto"
+        alt="mechanism"
+        style={{ height: "auto", width: "100%", objectFit: "cover" }}
+      />
+      <img
+        src="https://fakeimg.pl/1920x1080/?text=Combustion&font=noto"
+        alt="combustion"
+        style={{ height: "auto", width: "100%", objectFit: "cover" }}
+      />
+      <img
+        src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
+        alt="electric"
+        style={{ height: "auto", width: "100%", objectFit: "cover" }}
+      />
+    </div>
   );
 };
