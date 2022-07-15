@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-const Electric = () => {
+export const Electric = () => {
   return (
     <Container style={{ marginTop: "64px" }}>
       <Row>
@@ -30,5 +30,3 @@ const Electric = () => {
     </Container>
   );
 };
-
-export default Electric;

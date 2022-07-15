@@ -1,9 +1,9 @@
 import { Stack } from "react-bootstrap";
-import Combustion from "./components/Combustion/Combustion";
-import Electric from "./components/Electric/Electric";
-import Mechanism from "./components/Mechanism/Mechanism";
+import { Combustion } from "./components/Combustion/";
+import { Electric } from "./components/Electric/";
+import { Mechanism } from "./components/Mechanism/";
 
-const Team = () => {
+export const Team = () => {
   return (
     <Stack gap={5} style={{ padding: "64px 0" }}>
       <Mechanism />
@@ -12,5 +12,3 @@ const Team = () => {
     </Stack>
   );
 };
-
-export default Team;

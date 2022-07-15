@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-const Combustion = () => {
+export const Combustion = () => {
   return (
     <Container style={{ marginTop: "64px" }}>
       <Row>
@@ -31,5 +31,3 @@ const Combustion = () => {
     </Container>
   );
 };
-
-export default Combustion;

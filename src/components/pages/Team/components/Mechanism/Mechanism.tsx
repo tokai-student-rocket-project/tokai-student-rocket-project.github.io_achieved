@@ -1,6 +1,6 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-const Mechanism = () => {
+export const Mechanism = () => {
   return (
     <Container style={{ marginTop: "64px" }}>
       <Row>
@@ -29,5 +29,3 @@ const Mechanism = () => {
     </Container>
   );
 };
-
-export default Mechanism;

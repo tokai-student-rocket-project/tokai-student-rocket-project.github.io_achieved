@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Team from "../components/pages/Team/Team";
+import { Team } from "../components/pages/Team/";
 
 const TeamPage: NextPage = () => {
   return <Team />;

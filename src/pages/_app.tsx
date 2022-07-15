@@ -1,7 +1,7 @@
 import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Layout from "../components/Layout";
+import { Layout } from "../components/parts/Layout";
 import "../styles/globals.scss";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
