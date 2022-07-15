@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-import styles from "../styles/Header.module.scss";
+import styles from "./Header.module.scss";
 
-const Header = () => {
+export const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
       <Container fluid>
@@ -66,5 +66,3 @@ const Header = () => {
     </Navbar>
   );
 };
-
-export default Header;
