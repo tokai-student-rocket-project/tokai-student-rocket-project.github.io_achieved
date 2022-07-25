@@ -43,6 +43,7 @@ export const Header = () => {
             <a
               href="https://twitter.com/Tokai_SRP"
               target="_brank"
+              aria-label="Twitter"
               rel="noreferrer noopener"
             >
               <FaTwitter className={styles["react-icon"]} />
@@ -50,6 +51,7 @@ export const Header = () => {
             <a
               href="https://www.instagram.com/tokai_srp/"
               target="_brank"
+              aria-label="Instagram"
               rel="noreferrer noopener"
             >
               <FaInstagram className={styles["react-icon"]} />
@@ -57,6 +59,7 @@ export const Header = () => {
             <a
               href="https://www.youtube.com/c/TokaiSRP"
               target="_brank"
+              aria-label="Youtube"
               rel="noreferrer noopener"
             >
               <FaYoutube className={styles["react-icon"]} />
