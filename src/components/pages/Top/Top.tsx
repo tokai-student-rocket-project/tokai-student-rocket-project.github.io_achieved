@@ -6,7 +6,12 @@ export const Top = () => {
   return (
     <div>
       <div className={styles["hero"]}>
-        <Img src={require("./images/tsrp.jpeg")} alt="tsrp" webp />
+        <Img
+          src={require("./images/tsrp.jpeg")}
+          alt="tsrp"
+          webp
+          style={{ objectPosition: "40% 0" }}
+        />
       </div>
       <Container style={{ padding: "64px 0" }}>
         <Row>
