@@ -40,3 +40,19 @@
     }
   }
 }
+
+.images {
+  @include media-breakpoint-up(sm) {
+    display: flex;
+
+    div {
+      width: calc(100% / 3);
+    }
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
