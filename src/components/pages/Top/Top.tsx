@@ -1,11 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap";
+import Img from "react-optimized-image";
 
 export const Top = () => {
   return (
     <div>
-      <img
-        src="https://fakeimg.pl/1920x1080/?text=TSRP&font=noto"
+      <Img
+        src={require("./images/tsrp.jpeg")}
         alt="tsrp"
+        webp
         style={{ height: "auto", width: "100%", objectFit: "cover" }}
       />
       <Container style={{ padding: "64px 0" }}>

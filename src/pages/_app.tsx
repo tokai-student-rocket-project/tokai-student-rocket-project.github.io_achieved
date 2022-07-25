@@ -8,7 +8,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
-        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="icon" href="/favicons/favicon.ico" />
       </Head>
       <DefaultSeo
         title="東海大学学生ロケットプロジェクト"
