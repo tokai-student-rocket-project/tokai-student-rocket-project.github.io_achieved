@@ -1,9 +1,42 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
 .hero {
   height: 100vh;
+  position: relative;
 
   img {
     height: 100%;
     object-fit: cover;
+    position: absolute;
     width: 100%;
+  }
+
+  .hero-container {
+    align-items: center;
+    background: rgba($dark, 0.6);
+    color: $white;
+    display: flex;
+    height: 100%;
+    padding: 0 8%;
+    position: absolute;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0 35% 0 15%;
+    }
+
+    .headline-english {
+      font-size: 64px;
+    }
+
+    .headline-japanese {
+      font-size: 20px;
+      margin-bottom: 48px;
+    }
+
+    p {
+      margin-bottom: 64px;
+    }
   }
 }
