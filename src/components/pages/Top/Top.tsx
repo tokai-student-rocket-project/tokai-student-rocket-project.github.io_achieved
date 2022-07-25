@@ -38,7 +38,7 @@ export const Top = () => {
 
       <div className={styles["hero"]}>
         <img
-          src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
+          src="https://fakeimg.pl/1920x1080/?text=Mechanism&font=noto"
           alt="combustion"
           style={{ objectPosition: "60% 0" }}
         />
@@ -60,7 +60,7 @@ export const Top = () => {
 
       <div className={styles["hero"]}>
         <img
-          src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
+          src="https://fakeimg.pl/1920x1080/?text=Combustion&font=noto"
           alt="combustion"
           style={{ objectPosition: "60% 0" }}
         />
