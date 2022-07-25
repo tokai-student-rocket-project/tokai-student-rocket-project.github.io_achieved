@@ -1,15 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Img from "react-optimized-image";
+import styles from "./Top.module.scss";
 
 export const Top = () => {
   return (
     <div>
-      <Img
-        src={require("./images/tsrp.jpeg")}
-        alt="tsrp"
-        webp
-        style={{ height: "auto", width: "100%", objectFit: "cover" }}
-      />
+      <div className={styles["hero"]}>
+        <Img src={require("./images/tsrp.jpeg")} alt="tsrp" webp />
+      </div>
       <Container style={{ padding: "64px 0" }}>
         <Row>
           <Col lg={6}>
@@ -32,21 +30,24 @@ export const Top = () => {
           </Col>
         </Row>
       </Container>
-      <img
-        src="https://fakeimg.pl/1920x1080/?text=Mechanism&font=noto"
-        alt="mechanism"
-        style={{ height: "auto", width: "100%", objectFit: "cover" }}
-      />
-      <img
-        src="https://fakeimg.pl/1920x1080/?text=Combustion&font=noto"
-        alt="combustion"
-        style={{ height: "auto", width: "100%", objectFit: "cover" }}
-      />
-      <img
-        src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
-        alt="electric"
-        style={{ height: "auto", width: "100%", objectFit: "cover" }}
-      />
+      <div className={styles["hero"]}>
+        <img
+          src="https://fakeimg.pl/1920x1080/?text=Mechanism&font=noto"
+          alt="mechanism"
+        />
+      </div>
+      <div className={styles["hero"]}>
+        <img
+          src="https://fakeimg.pl/1920x1080/?text=Combustion&font=noto"
+          alt="combustion"
+        />
+      </div>
+      <div className={styles["hero"]}>
+        <img
+          src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
+          alt="electric"
+        />
+      </div>
     </div>
   );
 };
