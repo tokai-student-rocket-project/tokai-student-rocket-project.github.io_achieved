@@ -9,7 +9,7 @@
     "serve": "serve -p 8080 ./out",
     "eslint": "next lint --fix --dir src",
     "prettier": "prettier --write .",
-    "stylelint": "stylelint --fix src/**/*.{css,scss}"
+    "stylelint": "stylelint --fix src/**/*.{css,scss,module.scss}"
   },
   "lint-staged": {
     "*.{css,scss}": [
