@@ -5,6 +5,7 @@
 .hero {
   height: 100vh;
   position: relative;
+  width: 100vw;
 
   img {
     height: 100%;
@@ -61,4 +62,10 @@
     object-fit: cover;
     width: 100%;
   }
+}
+
+.content-container {
+  background: $dark;
+  color: $white;
+  position: relative;
 }
