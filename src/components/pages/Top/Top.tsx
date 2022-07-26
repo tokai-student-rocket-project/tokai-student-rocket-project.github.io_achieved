@@ -1,8 +1,42 @@
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import Img from "react-optimized-image";
 import styles from "./Top.module.scss";
 
+const setShow = (
+  position: number,
+  element: HTMLDivElement | null,
+  setFunction: Dispatch<SetStateAction<boolean>>
+) => {
+  if (element == null) {
+    return;
+  }
+
+  setFunction(position > element.offsetTop - element.clientHeight / 2);
+};
+
 export const Top = () => {
+  const mechanismRef = useRef<HTMLDivElement>(null);
+  const combustionRef = useRef<HTMLDivElement>(null);
+  const electricRef = useRef<HTMLDivElement>(null);
+  const [showMechanism, setShowMechanism] = useState(false);
+  const [showCombustion, setShowCombustion] = useState(false);
+  const [showElectric, setShowElectric] = useState(false);
+
+  const handleScroll = () => {
+    const position = window.scrollY;
+    setShow(position, mechanismRef.current, setShowMechanism);
+    setShow(position, combustionRef.current, setShowCombustion);
+    setShow(position, electricRef.current, setShowElectric);
+  };
+
+  useEffect(() => {
+    document.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       <div className={styles["hero"]}>
@@ -15,7 +49,7 @@ export const Top = () => {
       </div>
 
       <Container
-        style={{ color: "white", paddingTop: "64px", paddingBottom: "64px" }}
+        style={{ color: "white", paddingTop: "64px", paddingBottom: "48px" }}
       >
         <p>
           TSRPは手作りで低価格なロケット開発の場を学生に提供することで、学生が机上の勉学では学べない、
@@ -37,13 +71,17 @@ export const Top = () => {
         </div>
       </div>
 
-      <div className={styles["hero"]}>
+      <div className={styles["hero"]} ref={mechanismRef}>
         <img
           src="https://fakeimg.pl/1920x1080/?text=Mechanism&font=noto"
           alt="combustion"
           style={{ objectPosition: "60% 0" }}
         />
-        <div className={styles["hero-container"]}>
+        <div
+          className={`${styles["hero-container"]} ${
+            showMechanism ? styles["fade-in"] : ""
+          }`}
+        >
           <div>
             <div className={styles["headline-english"]}>Mechanism</div>
             <div className={styles["headline-japanese"]}>＿＿ 構造機構班</div>
@@ -59,9 +97,13 @@ export const Top = () => {
         </div>
       </div>
 
-      <div className={styles["hero"]}>
+      <div className={styles["hero"]} ref={combustionRef}>
         <Img src={require("./images/combustion.jpg")} alt="combustion" webp />
-        <div className={styles["hero-container"]}>
+        <div
+          className={`${styles["hero-container"]} ${
+            showCombustion ? styles["fade-in"] : ""
+          }`}
+        >
           <div>
             <div className={styles["headline-english"]}>Combustion</div>
             <div className={styles["headline-japanese"]}>＿＿ 燃焼班</div>
@@ -79,13 +121,17 @@ export const Top = () => {
         </div>
       </div>
 
-      <div className={styles["hero"]}>
+      <div className={styles["hero"]} ref={electricRef}>
         <img
           src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
           alt="combustion"
           style={{ objectPosition: "60% 0" }}
         />
-        <div className={styles["hero-container"]}>
+        <div
+          className={`${styles["hero-container"]} ${
+            showElectric ? styles["fade-in"] : ""
+          }`}
+        >
           <div>
             <div className={styles["headline-english"]}>Electric</div>
             <div className={styles["headline-japanese"]}>＿＿ 計測制御班</div>
