@@ -5,7 +5,7 @@
 .hero {
   height: 100vh;
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   img {
     height: 100%;
@@ -24,6 +24,7 @@
     padding: 0 8%;
     position: absolute;
     transition: opacity, 400ms;
+    width: 100%;
 
     @include media-breakpoint-up(sm) {
       padding: 0 35% 0 15%;
