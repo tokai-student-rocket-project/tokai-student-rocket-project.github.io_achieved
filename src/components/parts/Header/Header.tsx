@@ -1,7 +1,7 @@
+import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
-import Svg from "react-optimized-image";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
@@ -10,11 +10,13 @@ export const Header = () => {
       <Container fluid>
         <Navbar.Brand href="/" as={Link}>
           <a>
-            <Svg
-              src={require("./images/logo.svg")}
-              className={styles["logo"]}
-              alt="Tokai Student Rocket Project"
-            />
+            <div className={styles["logo"]}>
+              <ExportedImage
+                src="images/logo.svg"
+                layout="fill"
+                alt="Tokai Student Rocket Project"
+              />
+            </div>
           </a>
         </Navbar.Brand>
         <Navbar.Toggle />

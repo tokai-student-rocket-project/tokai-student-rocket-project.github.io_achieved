@@ -2,8 +2,15 @@
 @import "bootstrap/scss/variables";
 
 .logo {
-  height: 48px;
-  width: auto;
+  span {
+    position: unset !important;
+  }
+
+  img {
+    height: 48px !important;
+    position: relative !important;
+    width: unset !important;
+  }
 }
 
 .nav-link {
