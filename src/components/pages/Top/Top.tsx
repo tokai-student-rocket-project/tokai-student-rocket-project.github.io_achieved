@@ -1,6 +1,6 @@
+import ExportedImage from "next-image-export-optimizer";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { Button, Container } from "react-bootstrap";
-import Img from "react-optimized-image";
 import styles from "./Top.module.scss";
 
 const setShow = (
@@ -49,11 +49,12 @@ export const Top = () => {
   return (
     <div>
       <div className={styles["hero"]} ref={tsrpRef}>
-        <Img
-          src={require("./images/tsrp.jpeg")}
+        <ExportedImage
+          src="images/pages/Top/tsrp.jpeg"
+          layout="fill"
           alt="tsrp"
-          webp
-          style={{ objectPosition: "40% 0" }}
+          objectFit="cover"
+          objectPosition="40% 0"
         />
       </div>
 
@@ -68,22 +69,32 @@ export const Top = () => {
         </Container>
 
         <div className={styles["images"]}>
-          <div>
-            <Img src={require("./images/image0.jpg")} alt="image0" webp />
-          </div>
-          <div>
-            <Img src={require("./images/image1.jpg")} alt="image1" webp />
-          </div>
-          <div>
-            <Img src={require("./images/image2.jpg")} alt="image2" webp />
-          </div>
+          <ExportedImage
+            src="images/pages/Top/image0.jpg"
+            alt="image0"
+            layout="fill"
+            objectFit="cover"
+          />
+          <ExportedImage
+            src="images/pages/Top/image1.jpg"
+            alt="image1"
+            layout="fill"
+            objectFit="cover"
+          />
+          <ExportedImage
+            src="images/pages/Top/image2.jpg"
+            alt="image2"
+            layout="fill"
+            objectFit="cover"
+          />
         </div>
 
         <div className={styles["hero"]} ref={mechanismRef}>
-          <img
+          <ExportedImage
             src="https://fakeimg.pl/1920x1080/?text=Mechanism&font=noto"
-            alt="combustion"
-            style={{ objectPosition: "60% 0" }}
+            alt="mechanism"
+            layout="fill"
+            objectFit="cover"
           />
           <div
             className={`${styles["hero-container"]} ${
@@ -106,7 +117,12 @@ export const Top = () => {
         </div>
 
         <div className={styles["hero"]} ref={combustionRef}>
-          <Img src={require("./images/combustion.jpg")} alt="combustion" webp />
+          <ExportedImage
+            src="images/pages/Top/combustion.jpg"
+            alt="combustion"
+            layout="fill"
+            objectFit="cover"
+          />
           <div
             className={`${styles["hero-container"]} ${
               showCombustion ? styles["fade-in"] : ""
@@ -130,10 +146,11 @@ export const Top = () => {
         </div>
 
         <div className={styles["hero"]} ref={electricRef}>
-          <img
+          <ExportedImage
             src="https://fakeimg.pl/1920x1080/?text=Electric&font=noto"
-            alt="combustion"
-            style={{ objectPosition: "60% 0" }}
+            alt="electric"
+            layout="fill"
+            objectFit="cover"
           />
           <div
             className={`${styles["hero-container"]} ${

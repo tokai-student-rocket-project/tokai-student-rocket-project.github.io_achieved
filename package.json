@@ -5,7 +5,7 @@
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build && next export && next-image-export-optimizer",
     "serve": "serve -p 8080 ./out",
     "eslint": "next lint --fix --dir src",
     "prettier": "prettier --write .",

@@ -36,3 +36,7 @@ yarn-error.log*
 
 # ide
 /.idea/
+
+# next-image-export-optimizer
+nextImageExportOptimizer/
+next-image-export-optimizer-hashes.json

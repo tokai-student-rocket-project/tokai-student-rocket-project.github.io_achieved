@@ -7,13 +7,6 @@
   position: relative;
   width: 100%;
 
-  img {
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-  }
-
   .hero-container {
     align-items: center;
     background: rgba($dark, 0.6);
@@ -49,24 +42,28 @@
   }
 }
 
-.images {
-  @include media-breakpoint-up(sm) {
-    display: flex;
-
-    div {
-      width: calc(100% / 3);
-    }
-  }
-
-  img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-}
-
 .content-container {
   background: $dark;
   color: $white;
   position: relative;
+
+  .images {
+    span {
+      position: unset !important;
+    }
+
+    img {
+      height: unset !important;
+      position: relative !important;
+      width: 100% !important;
+    }
+
+    @include media-breakpoint-up(sm) {
+      display: flex;
+
+      span {
+        width: calc(100vw / 3) !important;
+      }
+    }
+  }
 }
