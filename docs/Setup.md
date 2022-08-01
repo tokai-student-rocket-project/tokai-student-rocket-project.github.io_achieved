@@ -20,11 +20,11 @@
 ```shell
 # shell
 
-code --install-extensions MS-CEINTL.vscode-language-pack-ja
-code --install-extensions mhutchie.git-graph
-code --install-extensions dbaeumer.vscode-eslint
-code --install-extensions stylelint.vscode-stylelint
-code --install-extensions esbenp.prettier-vscode
+code --install-extension MS-CEINTL.vscode-language-pack-ja
+code --install-extension mhutchie.git-graph
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension stylelint.vscode-stylelint
+code --install-extension esbenp.prettier-vscode
 ```
 
 ## 2. Githubを準備する
