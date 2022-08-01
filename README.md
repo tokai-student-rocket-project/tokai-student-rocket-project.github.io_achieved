@@ -20,3 +20,7 @@
 プログラミングの知識がなくても機能の提案やバグの報告という方法で開発に参加することもできます。
 
 - [Issueを作る](./docs/CreateIssue.md)
+
+## ライセンス
+
+Copyright 1999 Tokai Student Rocket Project
