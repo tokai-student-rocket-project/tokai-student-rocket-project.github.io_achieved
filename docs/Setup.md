@@ -79,11 +79,3 @@ git config --global core.autocrlf input
 ### 4.1. Node.jsをインストールする
 
 [ここ](https://nodejs.org/ja/download/)にアクセスして**LTS版**をインストールしてください。
-
-Macでは以下のコマンドを実行してインストールすることもできます。
-
-```shell
-# shell
-
-git config --global core.autocrlf input
-```
