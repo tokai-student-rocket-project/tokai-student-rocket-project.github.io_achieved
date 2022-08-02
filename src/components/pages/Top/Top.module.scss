@@ -2,68 +2,26 @@
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 
-.hero {
-  height: 100vh;
-  position: relative;
-  width: 100%;
+.image-container {
+  span {
+    position: unset !important;
+  }
 
-  .hero-container {
-    align-items: center;
-    background: rgba($dark, 0.6);
-    color: $white;
-    display: flex;
-    height: 100%;
-    opacity: 0;
-    padding: 0 8%;
-    position: absolute;
-    transition: opacity, 400ms;
-    width: 100%;
-
-    @include media-breakpoint-up(sm) {
-      padding: 0 35% 0 15%;
-    }
-
-    &.fade-in {
-      opacity: 1;
-    }
-
-    .headline-english {
-      font-size: 64px;
-    }
-
-    .headline-japanese {
-      font-size: 20px;
-      margin-bottom: 48px;
-    }
-
-    p {
-      margin-bottom: 64px;
-    }
+  img {
+    height: unset !important;
+    position: relative !important;
+    width: 100% !important;
   }
 }
 
-.content-container {
-  background: $dark;
-  color: $white;
-  position: relative;
+.image-gallery {
+  @extend .image-container;
 
-  .images {
+  @include media-breakpoint-up(sm) {
+    display: flex;
+
     span {
-      position: unset !important;
-    }
-
-    img {
-      height: unset !important;
-      position: relative !important;
-      width: 100% !important;
-    }
-
-    @include media-breakpoint-up(sm) {
-      display: flex;
-
-      span {
-        width: calc(100vw / 3) !important;
-      }
+      width: calc(100% / 3) !important;
     }
   }
 }
