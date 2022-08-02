@@ -2,34 +2,22 @@
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/mixins";
 
-.background-image {
-  height: 100vh;
-  position: relative;
-  width: 100%;
-}
+.gallery {
+  span {
+    position: unset !important;
+  }
 
-.content-container {
-  background: $dark;
-  color: $white;
-  position: relative;
+  img {
+    height: unset !important;
+    position: relative !important;
+    width: 100% !important;
+  }
 
-  .images {
+  @include media-breakpoint-up(sm) {
+    display: flex;
+
     span {
-      position: unset !important;
-    }
-
-    img {
-      height: unset !important;
-      position: relative !important;
-      width: 100% !important;
-    }
-
-    @include media-breakpoint-up(sm) {
-      display: flex;
-
-      span {
-        width: calc(100vw / 3) !important;
-      }
+      width: calc(100% / 3) !important;
     }
   }
 }
