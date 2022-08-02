@@ -4,13 +4,15 @@ import { Container } from "react-bootstrap";
 import styles from "./Top.module.scss";
 
 export const Top = () => {
-  const tsrpRef = useRef<HTMLDivElement>(null);
+  const backgroundImageReference = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
     const position = window.scrollY;
 
-    if (tsrpRef.current != null) {
-      tsrpRef.current.style.top = `${position - position / 2}px`;
+    if (backgroundImageReference.current != null) {
+      backgroundImageReference.current.style.top = `${
+        position - position / 2
+      }px`;
     }
   };
 
@@ -23,7 +25,10 @@ export const Top = () => {
 
   return (
     <>
-      <div className={styles["hero"]} ref={tsrpRef}>
+      <div
+        className={styles["background-image"]}
+        ref={backgroundImageReference}
+      >
         <ExportedImage
           src="images/pages/Top/tsrp.jpeg"
           layout="fill"
