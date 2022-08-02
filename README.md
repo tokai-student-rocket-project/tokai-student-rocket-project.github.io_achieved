@@ -9,17 +9,17 @@
 
 ## 開発に参加する
 
-開発に参加するには、Tokau Student Rocket Projectのメンバーである必要があります。
+開発に参加するには、Tokau Student Rocket Project のメンバーである必要があります。
 
-わからないことがあればSlackのhomepageチャンネルで問い合わせてください。
+わからないことがあれば Slack の homepage チャンネルで問い合わせてください。
 
 - [概要](./docs/Overview.md)
 - [環境構築](./docs/Setup.md)
-- [開発](./docs/Develop.md)
+- [開発](./docs/Development.md)
 
 プログラミングの知識がなくても機能の提案やバグの報告という方法で開発に参加することもできます。
 
-- [Issueを作る](./docs/CreateIssue.md)
+- [Issue を作る](./docs/CreateIssue.md)
 
 ## ライセンス
 
