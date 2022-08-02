@@ -1,31 +1,12 @@
 import ExportedImage from "next-image-export-optimizer";
-import { useEffect, useRef } from "react";
 import { Button, Col, Container, Row, Stack } from "react-bootstrap";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import styles from "./Top.module.scss";
 
 export const Top = () => {
-  const backgroundImageReference = useRef<HTMLDivElement>(null);
-
-  const handleScroll = () => {
-    const position = window.scrollY;
-
-    if (backgroundImageReference.current != null) {
-      backgroundImageReference.current.style.top = `${
-        position - position / 2
-      }px`;
-    }
-  };
-
-  useEffect(() => {
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <>
-      <div className="position-relative vh-100" ref={backgroundImageReference}>
+    <ParallaxProvider>
+      <Parallax className="vh-100" speed={-50}>
         <ExportedImage
           src="images/pages/Top/tsrp.jpeg"
           layout="fill"
@@ -33,7 +14,7 @@ export const Top = () => {
           objectFit="cover"
           objectPosition="40% 0"
         />
-      </div>
+      </Parallax>
 
       <Stack gap={5} className="position-relative py-5 text-bg-dark">
         <Container>
@@ -155,6 +136,6 @@ export const Top = () => {
           objectFit="cover"
         />
       </div>
-    </>
+    </ParallaxProvider>
   );
 };
