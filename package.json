@@ -39,7 +39,7 @@
     "lint-staged": "^13.0.3",
     "next-image-export-optimizer": "^0.12.1",
     "prettier": "^2.7.1",
-    "sass": "^1.53.0",
+    "sass": "^1.54.4",
     "serve": "^14.0.1",
     "stylelint": "^14.9.1",
     "stylelint-config-prettier": "^9.0.3",
