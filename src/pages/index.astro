@@ -5,7 +5,7 @@ import Card from "../components/Card.astro";
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <h1>東海大学学生ロケットプロジェクトのページへようこそ！</h1>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
       />
@@ -32,6 +32,11 @@ import Card from "../components/Card.astro";
         title="Community"
         body="Come say hi to our amazing Discord community. ❤️"
       />
+      <Card
+        href="http://deka.challe.u-tokai.ac.jp/srp/index.html"
+        title="旧サイト"
+        body="これまでのサイトにアクセスするにはこちらから。"
+      />
     </ul>
   </main>
 </Layout>
@@ -40,10 +45,10 @@ import Card from "../components/Card.astro";
   main {
     margin: auto;
     padding: 1.5rem;
-    max-width: 60ch;
+    max-width: 90ch;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     margin: 0;
   }
