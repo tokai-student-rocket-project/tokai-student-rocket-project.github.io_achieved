@@ -1,5 +1,6 @@
 ---
 external: false
+url: 
 draft: true 
 title: Draft Post
 description: This post is a draft and won't be built.
