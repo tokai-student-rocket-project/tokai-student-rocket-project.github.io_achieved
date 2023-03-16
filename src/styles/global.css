@@ -212,5 +212,30 @@
         transform: translateZ(0) scale(1);
     }
 
+
+    /*拡大縮小し、切り替わるスライドショー*/
+    .slide{ position: relative; width: 557px; height: 371px; overflow: hidden; margin: 0 auto;
+    }
+    .item1, .item2, .item3 , .item4{ position: absolute; top:0; left:0; width: 100%; height: 100%; background-size: cover; background-repeat: no-repeat;
+    }
+    .item1{ animation: slide1 20s infinite; 
+    }
+    .item1{ animation: slide1 20s infinite;
+    }
+    .item2{ animation: slide2 20s infinite;
+    }
+    .item3{ animation: slide3 20s infinite;
+    }
+    .item4{ animation: slide4 20s infinite;
+    }
+    @keyframes slide1 { 0% {opacity: 1; transform: scale(1.0);} 20% {opacity: 1;} 30% {opacity: 1;} 40% {opacity: 0; transform: scale(1.1);} 90% {opacity: 0} 100% {opacity: 1; transform: scale(1.0);}
+    }
+    @keyframes slide2 { 0% {opacity: 0;} 30% {opacity: 0; transform: scale(1.1);} 40% {opacity: 1;} 50% {opacity: 1;} 60% {opacity: 0; transform: scale(1.0);} 100% {opacity: 0;}
+    }
+    @keyframes slide3 { 0% {opacity: 0;} 50% {opacity: 0; transform: scale(1.0);} 60% {opacity: 1;} 70% {opacity: 1;} 90% {opacity: 0; transform: scale(1.1);} 100% {opacity: 0;}
+    }
+    @keyframes slide4 { 0% {opacity: 0;} 70% {opacity: 0; transform: scale(1.1);} 80% {opacity: 1;} 90% {opacity: 1;} 100% {opacity: 0; transform: scale(1.0);}
+    }
+    
     /* ------ REUSABLE UTILS - END ------ */
 }
