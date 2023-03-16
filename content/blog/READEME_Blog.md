@@ -1,7 +1,7 @@
 ---
 external: false
-draft: true
-title: hoge
+draft: false
+title: ブログの書き方
 description: hoge
 date: 2023-03-14
 ---
