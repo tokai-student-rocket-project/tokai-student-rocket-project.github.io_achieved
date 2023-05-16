@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<!--head-->
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-type" content="text/html">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta name="keywords" content="TSRP,SRP,ロケットプロジェクト,宇宙,学生,ロケット,東海,打ち上げ,ハイブリット,宇宙開発,能代ロケット">
+<meta name="description" content="東海大学学生ロケットプロジェクトの紹介及び活動報告を行うサイトです。">
+
+<title>東海大学学生ロケットプロジェクト</title>
+
+<link rel="shortcut icon" href="../favicon.ico">
+<link rel="icon" href="../favicon.ico">
+
+<!--css-->
+<link rel="stylesheet" href="../normalize.css" type="text/css">
+<link rel="stylesheet" href="../master.css" type="text/css">
+
+<!--script-->
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?snPfutzL7AQ%3D" charset="utf-8"></script>
+
+<!--GoogleAnalyst-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58904041-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!--end_head--></head>
+
+<!--main-->
+<body>
+<div class="container">
+	<a href="../index.html"><img src="../TSRP_logo.png" class="float_left"></a>
+	<img src="../challenge_SAC.png" class="float_right">
+<!-- /.container --></div>
+
+<div class="container">
+	<div class="column">
+		<div class="listitem">
+			<p class="tab"><a href="../About_TSRP/About_TSRP.html"><img src="../tab_button/About_TSRP.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="../Our_Rockets/Our_Rockets.html"><img src="../tab_button/Our_Rockets.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="../Technology/Module_Structure.html"><img src="../tab_button/Technology.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="http://tsrp.blog66.fc2.com/" target="_blank"><img src="../tab_button/News.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="../Past_Projects/Past_Projects.html"><img src="../tab_button/Past_Projects.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="../Multimedia/Multimedia.html"><img src="../tab_button/Multimedia.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="../Links/Links.html"><img src="../tab_button/Links.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="listitem">
+			<p class="tab"><a href="../Contact_Us/Contact_Us.html"><img src="../tab_button/Contact_Us.png"></a></p>
+		<!-- /.listitem --></div>
+		<div class="no_listitem">
+			<p class="tab"><img src="../tab_button/blank.png"></p>
+		<!-- /.listitem --></div>
+	<!-- /.column --></div>
+<!-- /.container --></div>
+
+<div class="container">
+	<div class="sidebar">
+		<p>
+			<a href="./Module_Structure.html" class="menu_link">モジュール式機体構造</a>
+			<br><br>
+			<a href="./Separation.html" class="menu_link">無火薬式分離機構</a>
+			<br><br>
+			<a href="./THR.html" class="menu_link">ロケットエンジン</a>
+			<br><br>
+			<span class="menu_now">酸化剤供給システム</span>
+			<br><br>
+			<a href="./Common_Meter.html" class="menu_link">共通計器</a>
+			<br><br>
+			<a href="./Telemeter.html" class="menu_link">テレメータ</a>
+			<br><br>
+			<a href="./Launcher.html" class="menu_link">ランチャ(発射台)</a>
+		</p>
+	<!-- /.sidebar --></div>
+	<div class="contents">
+		<div class="paragraph">
+			<h1>バルブシステム</h1>
+			<p>
+				TSRPにおけるバルブシステムは、ロケットの内部配管は勿論のこと地上設備やその制御システム全般のことを指します。
+				2016年度まで、玩具用ロケットエンジンであるHyperTEKシステムに準拠したランチステム方式を使用していましたが、
+				この方式は、ロケットモータの設計に制約ができてしまうことや、内部コンポーネントを損傷させるリスクがあることなど様々な問題を抱えていました。
+				今後の大推力大型モータを安全かつ、高性能なものとするため、独自の酸化剤供給システムであるバルブシステムが開発されました。
+				TSRP独自のバルブシステムはH-36号機で初の飛翔実証試験が行われ、その後H-40号機、H-44号機と徐々に安全性・運用性の向上、軽量化・規格化開発を進めています。
+			</p>
+			<h2>パッシブピストンバルブ</h2>
+			<p>
+				パッシブピストンバルブはタンクへの酸化剤充填機能、点火用酸素供給機能、モータへの酸化剤供給機能を有したバルブシステムを構成するコンポーネントの一つです。
+				このコンポーネントはロケット内部に搭載されており、独自設計の丸形供給アダプタによって地上支援設備と接続されています。
+				駆動源をロケット外部に設置することにより小型軽量化を達成し、低高度ロケット用バルブとして近年のロケットに使用されています。
+			</p>
+			<h2>GSE（地上支援設備）</h2>
+			<p>
+				GSEとはGround Support Equipmentの略称であり、TSRPではロケット外部の配管や制御装置などの事を指します。
+				ロケットへの酸化剤充填作業やエンジンの点火操作はこのGSEにより遠隔地から安全に行うことができます。
+			</p>
+			<br><br>
+			<h1>自作酸化剤タンク「PROGRESS」</h1>
+			<p>
+				近年、自主開発エンジンであるTHRシリーズの大型・大出力化に伴い、従来の既製品タンクの容量では達成不可能な大容量タンクの必要性が増しています、
+				今後のさらなる大出力化には大容量タンクの自主開発が必要不可欠であり、そのための基礎技術獲得を目的として自主開発タンクPROGRESSが開発されました。
+				PROGRESSは安全性と運用性を重視し、JAXAが公表している安全基準と日本工業規格に基づき設計されています。今後はPROGRESSより得られた知見を基に大容量酸化剤タンクの開発を行います。
+			</p>
+		</div>
+		<!--
+		<div class="imgbar">
+			<figure style="display: inline-block; margin-bottom: 20px;">
+				<img src="./THR/01.png">
+				<figcaption>600 N級エンジン THR-F006K</figcaption>
+			</figure>
+		</div>
+		-->
+	<!-- /.contents --></div>
+<!-- /.container --></div>
+
+<hr>
+
+<div class="container">
+    <!--<img class="float_left" src="./twave.png" width="200" height="40"> -->
+    <!--<img class="float_left" src="../challenge.png" width="200" height="40">-->
+    <img class="float_left" src="../unisec.png" width="200" height="40">
+    <p class="copyright">
+        Copyright 1999-2022 Tokai Student Rocket Project<br>
+        If you have opinion etc... :tokai.srp/at/gmail.com
+    </p>
+    <!-- /.container -->
+</div>
+
+<!--end_main--></body>
+
+</html>

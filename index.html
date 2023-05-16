@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+
+<!--head-->
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-type" content="text/html">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<meta name="keywords" content="TSRP,SRP,ロケットプロジェクト,宇宙,学生,ロケット,東海,打ち上げ,ハイブリットロケット,宇宙開発,能代ロケット">
+<meta name="description" content="東海大学学生ロケットプロジェクトの紹介及び活動報告を行うサイトです。,ハイブリッド,ロケット">
+
+<title>東海大学学生ロケットプロジェクト</title>
+
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="icon" href="favicon.ico">
+
+<!--css-->
+<link rel="stylesheet" href="normalize.css" type="text/css">
+<link rel="stylesheet" href="master.css" type="text/css">
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+
+<!--slider-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/flexslider.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$('.flexslider').flexslider({
+			animation: "slide",
+			controlsContainer: ".flex-container",
+			slideshowSpeed: 4000,			//スライドの間隔
+			animationSpeed: 1000,			//スライドのスピード
+			directNav: false,
+			controlNav: true,
+			startAt: 0,
+		});
+	});
+</script>
+
+<!--Font-->
+<script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?snPfutzL7AQ%3D" charset="utf-8"></script>
+
+<!--GoogleAnalyst-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58904041-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!--Redirect-->
+<!--
+<script type="text/javascript">
+window.onload = function () {
+    MobileRedirect();
+}
+function MobileRedirect() {
+    var agent = navigator.userAgent;
+    if (agent.indexOf('Windows NT') < 0 &&
+        agent.indexOf('iPad') < 0 &&
+        (agent.indexOf('iPhone') >= 0 ||
+            agent.indexOf('iPod') >= 0 ||
+            agent.indexOf('Windows Phone') >= 0 ||
+            agent.indexOf('Android') >= 0 ||
+            agent.indexOf('Mobile') >= 0)) {
+        //if (window.confirm('スマートフォン向けサイトに移動しますか？')) {
+            location.href = "./sp/index.html";
+        //}
+    }
+}
+</script>
+-->
+
+<!--end_head--></head>
+
+<!--======================================================================
+=======================================================================-->
+
+<!-- main contents -->
+<body>
+	<div class="container">
+		<a href="index.html"><img src="TSRP_logo.png" class="float_left"></a>
+		<a href="https://www.u-tokai.ac.jp/campus-life/challenge/" target="_blank"><img src="challenge_SAC.png" class="float_right"></a>
+		<!--<p>
+		東海大学スチューデントアチーブメントセンター
+		</p>-->
+		<!-- /.container -->
+	</div>
+
+	<div class="container">
+		<div class="column">
+			<div class="listitem">
+				<p class="tab"><a href="./About_TSRP/About_TSRP.html"><img src="./tab_button/About_TSRP.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="./Our_Rockets/Our_Rockets.html"><img src="./tab_button/Our_Rockets.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="./Technology/Module_Structure.html"><img src="./tab_button/Technology.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="http://tsrp.blog66.fc2.com/" target="_blank"><img src="./tab_button/News.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="./Past_Projects/Past_Projects.html"><img src="./tab_button/Past_Projects.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="./Multimedia/Multimedia.html"><img src="./tab_button/Multimedia.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="./Links/Links.html"><img src="./tab_button/Links.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="listitem">
+				<p class="tab"><a href="./Contact_Us/Contact_Us.html"><img src="./tab_button/Contact_Us.png"></a></p>
+				<!-- /.listitem -->
+			</div>
+			<div class="no_listitem">
+				<p class="tab"><img src="./tab_button/blank.png"></p>
+				<!-- /.listitem -->
+			</div>
+			<!-- /.column -->
+		</div>
+		<!-- /.container -->
+	</div>
+
+	<div class="flex-container">
+		<div class="flexslider">
+			<ul class="slides">
+				<li><img src="slide/abouttsrp.jpg"></li>		<!--2-->
+				<li><img src="slide/Tech.jpg"></li>			<!--3-->
+				<li><img src="slide/avio.png"></li>			<!--4-->
+				<li><img src="slide/pastprojects.jpg"></li>		<!--5-->
+				<li><img src="slide/H-42.png"></li>		<!--1-->
+				<!--	<li><a href="http://tsrp.blog66.fc2.com/blog-entry-404.html" target="_blank"><img src="slide/sinkan.png"></a></li>		<!--1-->
+			</ul>
+			<!-- /.flexslider -->
+		</div>
+		<!-- /.flex-container -->
+	</div>
+	<br><br><br>
+
+	<!--Twitter 埋め込み-->
+	<a class="twitter-timeline" data-lang="ja" data-width="600" data-height="550" data-theme="dark" href="https://twitter.com/Tokai_SRP?ref_src=twsrc%5Etfw">Tweets by Tokai_SRP</a>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<br><br>
+	<hr>
+
+	<div class="container">
+		<!--<img class="float_left" src="./twave.png" width="200" height="40"> -->
+		<!--<img class="float_left" src="./challenge.png" width="200" height="40">-->
+		<!--<a href="http://unisec.jp/">-->
+		<img class="float_left" src="./unisec.png" width="200" height="40">
+		<p class="copyright">
+			Copyright 1999-2022 Tokai Student Rocket Project<br>
+			If you have opinion etc... :tokai.srp/at/gmail.com
+		</p>
+		<!-- /.container -->
+	</div>
+
+	<!--end_main-->
+</body>
+
+</html>

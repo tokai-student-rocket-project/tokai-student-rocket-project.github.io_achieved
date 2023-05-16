@@ -1,0 +1,81 @@
+﻿/*タグ指定*/
+
+/*本体body*/
+body{margin: 0px auto; width: 730px; font-family: Ryumin Regular KL;}
+
+/*見出し関係*/
+
+h1{font-size: 30px; font-weight: normal;}
+h2{font-size: 24px; font-weight: normal;}
+h3{font-size: 18px; font-weight: normal;}
+
+.line{line-height: 150%;}
+
+
+
+
+
+.pay{width:25 px; height:25 px;}
+
+/* Past_Project */
+h1.past{font-weight: normal;}
+
+/*MultiMedia*/
+td.mm{width: 100px;}
+tr.mm{height: 50px}
+
+/*Wall Paper*/
+.WAcenter{text-align: center;}
+.wa_rightside{position: relative; left: 600px;}
+.aw_leftside{position: relative; left: 0px;}
+img.wa{width: 480px; height: 270px;}
+
+
+/* Links & Contact_Us */
+h1.lc{font-size: 32px; font-weight: normal;}
+h2.lc{font-size: 18px; font-weight: normal; border-bottom-style: solid; border-width: 1px; width: 50%;}
+h3.lc{font-size: 16px; font-weight: normal;}
+
+
+/* セレクタフリー */
+
+.pos_rightside{position: absolute; right: 0px;}
+.pos_leftside{position: absolute; left: 0px;}
+.text_leftside{text-align: left;}
+.text_rightside{text-align: right;}
+.img_rightside{float: right;}
+.img_leftside{float: left;}
+.img_center{display: block; margin: auto;}
+
+.widhthsize{width: 1200px}
+.copyright{text-align: right; vertical-align: bottom; font-size: 1px;}
+.aclear{clear: both;}
+
+.main_tab{width: 1200px;}
+
+.pastmenu_table{width: 1200px; text-align:center;}
+.pastmenu_pic{width: 296px; height:auto; border: 0px; margin: 0px;} 
+.pastnumber{width: 200px; height: 100px;}
+.pastnumber2{width: 220px; height: 100px;}
+.pastrocket_table{padding-left: 10px;}
+.pastrocket_table_td{width: 110px; height: 25px; vertical-align: top;}
+
+
+.about_menu_table{width: 228px; height: 250px;}
+.about_menu_now{font-size: 16px; text-decoration: underline; text-align: center; margin: 10px 0px;}
+.about_menu_link{text-decoration: none; color: black;}
+.about_menu_cell{font-size:16px; text-align: center; margin: 0px 0px 10px 0px;}
+.about_main{padding: 0px 30px 0px 10px; vertical-align: top;}
+.about_title{font-size: 30px;}
+.about_pic{float: right;}
+.about_write{font-size: 18px; line-height: 150%; word-break: normal;}
+.about_table_cell{vertical-align: top;}
+.about_main2{padding: 0px 30px 0px 10px; vertical-align: top; height: auto;}
+.about_main3{padding: 0px 0px 0px 10px; vertical-align: top; float: right;}
+.about_title2{font-size: 25px;}
+
+.caption{font-size: 16px; display: block; text-align: center;}
+
+
+/*YouTubeプレイヤー*/
+#ytplayer{width: 640px; height: 360px; border: 0px;}

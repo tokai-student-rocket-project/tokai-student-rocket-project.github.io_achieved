@@ -1,0 +1,5 @@
+high-res
+height:1000 px
+
+mini
+height:400 px

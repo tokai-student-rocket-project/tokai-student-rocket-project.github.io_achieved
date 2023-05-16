@@ -1,0 +1,7 @@
+Header
+ロゴ→Height:60
+フルネーム→Height:60
+
+タブ→Height:35  Width:150
+
+スライド→Height:350  Width:1200

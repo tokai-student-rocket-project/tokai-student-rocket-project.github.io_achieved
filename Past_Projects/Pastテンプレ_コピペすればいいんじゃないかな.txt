@@ -1,0 +1,53 @@
+<div class="PastRocket">
+		<div class="pastnumber"><img src="./PastNumber/h-42.png" class="pastnumber_pic"></div>
+		<div class="line"></div>
+		<a href="https://goo.gl/photos/fpb4oZH9RVjqeskL7" target="_blank"><img src="./PastRockets/H-42/h-42t.jpg" class="pastrocket_pic"></a>
+		<table>
+			<tr>
+				<th>実験目的</th>
+				<td>
+					超音速飛翔するロケットの物理的データの取得
+				</td>
+			</tr>
+			<tr>
+				<th>打上日時</th>
+				<td>2016年8月24日</td>
+			</tr>
+			<tr>
+				<th>打上場所</th>
+				<td>秋田県能代市落合浜旧能代海水浴場</td>
+			</tr>
+			<tr>
+				<th>到達高度</th>
+				<td>
+					ノーズコーンが脱落し墜落
+				</td>
+			</tr>
+			<tr>
+				<th>直径/全長/質量</th>
+				<td>183 mm/2094 mm/14.7 kg</td>
+			</tr>
+			<tr>
+				<th>主な搭載物</th>
+				<td>
+					タンク閉鎖機構<br>
+					共通計器<br>
+					テレメータ<br>
+					NinjaScan-Light<br>
+					不知火III/IV-42Custom<br>
+				</td>
+			</tr>
+			<tr>
+				<th>搭載エンジン</th>
+				<td>THR-F210L改二(第3世代自主開発1 kN級L型エンジン)</td>
+			</tr>
+			<tr>
+				<th>特記事項</th>
+				<td>
+					学生ロケット初の音速飛翔へのチャレンジ<br>
+					事前計算値　速度：367.7 m/s(Mach1.1)、高度：5500 m<br>
+					離床約8秒後にノーズコーンが脱落
+				</td>
+			</tr>
+		</table>
+	<!-- /.H-42 --></div>

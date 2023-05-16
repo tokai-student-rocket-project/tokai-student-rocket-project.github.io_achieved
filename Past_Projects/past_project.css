@@ -1,0 +1,63 @@
+﻿/*- Past Project -*/
+.pastmenu_pic{
+  width: 296px;
+  height:auto;
+  border: 0px;
+  margin: 0px;
+}
+.PastRocket{
+  margin-bottom: 30px;
+}
+.PastRocket:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+.pastnumber{
+  width: 1200px;
+  /*margin-bottom: 20px;
+  border-bottom: solid thin;*/
+}
+.pastnumber_pic{
+  width: 250px;
+}
+.line{
+  width: 550px;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, left top, from(#272727), to(white));
+  background: -webkit-linear-gradient(left,#272727, white);
+  background: -moz-linear-gradient(left,#272727, white);
+  background: -o-linear-gradient(left,#272727, white);
+  background: -ms-linear-gradient(left,#272727, white);
+  background: linear-gradient(left,#272727, white);
+}
+
+
+.pastrocket_pic{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.pastrocket_pic:hover {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 20px;
+}
+th{
+  font-weight: normal;
+  text-align: left;
+  width: 120px;
+  line-height: 1.7;
+  vertical-align: top;
+}
+td{
+  vertical-align: top; 
+  line-height: 1.7;
+}
+

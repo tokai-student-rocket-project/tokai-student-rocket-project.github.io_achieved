@@ -1,0 +1,337 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'MyFont';
+    src: url()}
+@font-face{
+    font-family: 'MyFont2';
+    src: url();
+}
+
+h1 {
+    font-size: 2em;
+     padding: 5% 0 0 0;
+}
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 1em;
+    }
+}
+
+body {
+    font-family: 'MyFont';
+    background: url("../yumeroke_back.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /* width: 950px; */
+    text-align:　center; 
+    color: #222222;
+    margin: 0 auto; 
+    animation: fadeIn 3s ease 0s 1 normal;
+    -webkit-animation: fadeIn 4s ease 0s 1 normal;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/*1ページ目*/
+.top-wrapper{
+    margin: 0 10%  
+}
+#top{
+    text-align: center;
+    color: #222222;
+    width:100%;
+    padding: 30px 0px 30px 0px;
+}
+#title{
+    text-align: center;
+}
+/*2ページ目*/
+#about {
+    margin:0% 0;
+    padding: 10% 100px 7% 100px;
+    text-align: center;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 560px) {
+    #about {
+        padding: 30px 15px;
+    }
+}
+/*3ページ目*/
+#sample{
+    padding: 50px 10px 350px 50px;
+    
+    /* margin: 100px 0 0 0; */
+}
+#sample img {
+    width:45%;
+    height:auto;
+}
+#sample h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+#sample h3 {
+    margin: 0;
+}
+#detail1{
+    text-align: center;
+    font-size: 2em;
+}
+#detail2{
+    text-align: center;
+    vertical-align: center;
+}
+#detail3{
+    float: left;
+    font-size: 2.2vw;
+    color: #0B2161;
+    margin: 0 0 0 20px ;
+    
+}
+@media screen and (max-width: 860px) {
+    #sample {
+        text-align: center;
+        padding: 30px;
+    }
+    #sample img {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    #detail3 {
+        font-size: 5vw;
+        text-align: left;
+        margin: 10px ;
+    }
+}    
+
+/*4ページ目*/
+#main1_end img {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+#main1_end{
+text-align: center;
+font-size: 2vw;
+padding: 0 15% 0 20%;
+color: #0B2161;
+}
+#main2_end{
+text-align: left;
+font-size: 2vw;
+padding: 0 15% 0 20%;
+color: #0B2161;
+}
+
+/*4ページ目*/
+#main{
+}
+#main2{
+    text-align: left;
+    font-size: 2vw;
+    padding: 0 15% 0 20%;
+    color: #0B2161;
+}
+#main3{
+    font-size: 200%;
+    text-align: center;
+    padding: 0 20% 0 20%;
+}
+
+/*5ページ目*/
+#bottom{
+    text-align: center;
+    font-size:50%;
+}
+#sns{
+    text-align: center;
+}
+#prof{
+    text-align: left;
+    font-size: 250%;
+    padding: 0 25% 0 25%;
+}
+#attention{
+    text-align: left;
+    font-size: 180%;
+    padding: 0 25% 0 25%;
+}
+
+#button{
+    color: #ffc000;
+    text-align: center;
+    font-size: 1vw;
+}
+#scroll{
+    clear :left;
+    text-align: center;
+}
+
+/*rocketのアニメーション*/
+
+.rocket{
+    width: 300px;
+    margin: 40px auto;
+    padding: 40px 0;
+    background: #e88;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+}
+ 
+.rocket:hover{
+    animation: rumble 0.12s linear infinite;
+}
+ 
+@keyframes rumble{
+    0%  {transform:rotate(0deg) translate(0,0);}
+    12.5%   {transform:rotate(0.4deg)   translate(1px,-1px);}
+    25% {transform:rotate(0.8deg)   translate(0px,1px);}
+    37.5%   {transform:rotate(0.4deg)   translate(-1px,0);}
+    50% {transform:rotate(0deg) translate(0,0);}
+    62.5%   {transform:rotate(-0.4deg)  translate(1px,0);}
+    75% {transform:rotate(-0.8deg)  translate(0,1px);}
+    87.5%   {transform:rotate(-0.4deg)  translate(-1px,-1px);}
+    100%    {transform:rotate(0deg) translate(0,0);}
+}
+
+/*応募ボタン*/
+button{
+position: relative;
+display: inline-block;
+font-weight: bold;
+width:40%;
+height:100px;
+padding: 0 10px 0 10px;
+text-decoration: none;
+color: #FFA000;
+background: #fff1da;
+border-bottom: solid 4px #FFA000;
+border-radius: 15px 15px 0 0;
+transition: .4s;
+font-size: 200%;
+}
+button:hover {
+background: #ffc25c;
+color: #FFF;
+} 
+
+@-webkit-keyframes bounce {
+  5%  { -webkit-transform: scale(1.1, .8); }
+  10% { -webkit-transform: scale(.8, 1.1) translateY(-5px); }
+  15% { -webkit-transform: scale(1, 1); }
+}
+@keyframes bounce {
+  5%  { transform: scale(1.1, .8); }
+  10% { transform: scale(.8, 1.1) translateY(-5px); }
+  15% { transform: scale(1, 1); }
+}
+
+/*Twitter*/
+.fl_tw2{/*ボタンの背景*/
+color: #FFF;/*文字・アイコン色*/
+border-radius: 7px;/*角丸に*/
+display: inline-block;
+height: 60px;/*高さ*/
+width: 25%;/*幅*/
+text-align: center;/*中身を中央寄せ*/
+font-size: 25px;/*文字のサイズ*/
+line-height: 50px;/*高さと合わせる*/
+vertical-align: middle;/*垂直中央寄せ*/
+background: #1da1f3;
+overflow: hidden;/*はみ出た部分を隠す*/
+text-decoration:none;/*下線は消す*/
+}.fl_tw2 .fa-twitter {
+text-shadow: 2px 2px 0px #4287d6;
+font-size: 30px;
+}.fl_tw2 span {/*テキスト*/
+display:inline-block;
+transition: .5s}.fl_tw2:hover span{/*ホバーで一周回転*/
+-webkit-transform: rotateX(360deg);
+-ms-transform: rotateX(360deg);
+transform: rotateX(360deg);
+} 
+
+/*Facebook*/
+ .fl_fb2 {/*ボタンの下地*/
+color: #FFF;/*文字・アイコン色*/
+border-radius: 7px;/*角丸に*/
+display: inline-block;
+height: 60px;/*高さ*/
+width: 25%;/*幅*/
+text-align: center;/*中身を中央寄せ*/
+font-size: 25px;/*文字のサイズ*/
+line-height: 50px;/*高さと合わせる*/
+vertical-align: middle;/*垂直中央寄せ*/
+background: #4966a0;
+overflow: hidden;/*はみ出た部分を隠す*/
+text-decoration:none;/*下線は消す*/
+}.fl_fb2 .fa-facebook {
+text-shadow: 2px 2px 1px #224282;
+font-size: 30px;
+}.fl_fb2 span {/*テキスト*/
+display:inline-block;
+transition: .5s;
+}.fl_fb2:hover span{/*ホバーで一周回転*/
+-webkit-transform: rotateX(360deg);
+-ms-transform: rotateX(360deg);
+transform: rotateX(360deg);
+} 
+
+/*Instagram*/
+.fl_inst2{/*ボタンの下地*/
+color: #FFF;/*文字・アイコン色*/
+border-radius: 7px;/*角丸に*/
+position: relative;
+display: inline-block;
+height: 60px;/*高さ*/
+width: 25%;/*幅*/
+text-align: center;/*中身を中央寄せ*/
+font-size: 25px;/*文字のサイズ*/
+line-height: 50px;/*高さと合わせる*/
+vertical-align: middle;/*垂直中央寄せ*/
+background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+overflow: hidden;/*はみ出た部分を隠す*/
+text-decoration:none;/*下線は消す*/
+}.fl_inst2:before{/*グラデーション②*/
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;/*全体を覆う*/
+height: 100%;/*全体を覆う*/
+background: -webkit-linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}.fl_inst2 .fa-instagram{/*アイコン*/
+font-size: 35px;/*アイコンサイズ*/
+position: relative;
+top: 4px;/*アイコン位置の微調整*/
+}.fl_inst2 span {/*テキスト*/
+display:inline-block;
+position: relative;
+transition: .5s}.fl_inst2:hover span{/*ホバーで一周回転*/
+-webkit-transform: rotateX(360deg);
+-ms-transform: rotateX(360deg);
+transform: rotateX(360deg);
+} 
+
+#launch_end{
+    text-align: left;
+    font-size: 2vw;
+    padding: 0 15% 0 20%;
+    color: #0B2161;
+
+}
