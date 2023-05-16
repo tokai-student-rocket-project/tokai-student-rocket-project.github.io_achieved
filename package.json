@@ -38,7 +38,7 @@
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
-    "next-image-export-optimizer": "^0.12.1",
+    "next-image-export-optimizer": "^0.17.1",
     "prettier": "^2.7.1",
     "sass": "^1.54.4",
     "serve": "^14.0.1",
