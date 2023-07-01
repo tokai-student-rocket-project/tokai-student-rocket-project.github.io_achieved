@@ -1,52 +1,15 @@
 {
-  "name": "homepage",
-  "version": "0.1.0",
-  "private": true,
+  "name": "tokai-student-rocket-project.github.io",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "prepare": "husky install",
-    "dev": "next dev",
-    "build": "next build && next export && next-image-export-optimizer",
-    "serve": "serve -p 8080 ./out",
-    "eslint": "next lint --fix --dir src",
-    "prettier": "prettier --write .",
-    "stylelint": "stylelint --fix src/**/*.{css,scss,module.scss}"
-  },
-  "lint-staged": {
-    "*.{css,scss}": [
-      "stylelint --fix"
-    ],
-    "*.{js,ts,tsx,css,json,md}": [
-      "prettier --write"
-    ]
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "next": "12.2.5",
-    "next-seo": "^5.4.0",
-    "react": "18.2.0",
-    "react-bootstrap": "^2.5.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "react-scroll-parallax": "^3.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "18.14.6",
-    "@types/react": "18.0.17",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.35.0",
-    "eslint-config-next": "12.2.5",
-    "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.3",
-    "next-image-export-optimizer": "^0.17.1",
-    "prettier": "^2.7.1",
-    "sass": "^1.58.3",
-    "serve": "^14.0.1",
-    "stylelint": "^14.10.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard-scss": "^5.0.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-prettier": "^2.0.0",
-    "typescript": "4.9.5"
+    "astro": "^2.7.2"
   }
 }
