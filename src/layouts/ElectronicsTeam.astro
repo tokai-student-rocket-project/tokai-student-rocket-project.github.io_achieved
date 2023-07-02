@@ -1,0 +1,32 @@
+---
+import electronicsAvionics from "./images/electronics_avionics.jpg";
+---
+
+<div class="columns is-gapless mb-0">
+  <div class="column is-half has-background-black-ter">
+    <div class="section is-medium has-text-white">
+      <div class="content">
+        <h3
+          class="title is-2 has-text-white has-text-weight-normal"
+          style={{ borderBottom: "1px solid", paddingBottom: "0.25em" }}
+        >
+          計測制御班
+        </h3>
+        <p>
+          ロケットに搭載される電子機器の開発を担当します。ロケットには必ず電子機器が搭載されます。これはロケットの姿勢や位置、パラシュートの開傘指令を出すために必要だからです。打上実験後にはロケット搭載計器のデータが読み出され、データは全ての班での開発に役立てられます。
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column" style={{ position: "relative" }}>
+    <img
+      src={electronicsAvionics}
+      style={{
+        height: "100%",
+        width: "100%",
+        objectFit: "cover",
+        position: "absolute",
+      }}
+    />
+  </div>
+</div>
