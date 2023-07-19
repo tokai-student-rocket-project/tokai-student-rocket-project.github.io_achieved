@@ -1,0 +1,29 @@
+---
+import type { MarkdownLayoutProps } from "astro";
+
+type Props = MarkdownLayoutProps<{
+  title: string;
+  author: string;
+  data: string;
+}>;
+
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ja" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title} | TSRP</title>
+  </head>
+  <body>
+    <h2>書いた人: {frontmatter.author}</h2>
+    <slot />
+    
+    <p>投稿日: {frontmatter.data.slice(0, 10)}</p>
+  </body>
+</html>
