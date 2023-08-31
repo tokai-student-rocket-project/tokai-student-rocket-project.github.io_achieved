@@ -1,0 +1,40 @@
+---
+const posts = await Astro.glob("../pages/posts/*.md");
+---
+
+<section class="hero is-medium is-info">
+  <div class="hero-body">
+    <p class="title is-1">TSRP Blog</p>
+    <p class="subtitle ">Subtitle Subtitle Subtitle
+    </p>
+
+
+    <div class="tile">
+      {
+        posts.slice(0, 4).map((post) => (
+          <article class="media-content">
+            <div class="column">
+              <div class="box">
+                <p class="title is-spaced is-2 has-text-primary has-text-centered">
+                  {post.frontmatter.title}
+                  <br />
+                  <p class="subtitle has-text-info has-text-centered">
+                    {post.frontmatter.description}
+                    <br />
+                    <div class="buttons is-round is-right">
+                      <div class="button is-link">
+                        <a class="has-text-white" href={post.url}>
+                          Read more
+                        </a>
+                      </div>
+                    </div>
+                  </p>
+                </p>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
