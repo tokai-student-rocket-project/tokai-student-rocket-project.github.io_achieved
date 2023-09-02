@@ -2,7 +2,7 @@
 const posts = await Astro.glob("../pages/posts/*.md");
 ---
 
-<section class="hero is-medium is-info">
+<section class="hero is-medium has-background-info-light">
   <div class="hero-body m-4">
     <p class="title is-size-1">TSRP Blog</p>
     <p class="subtitle">Subtitle Subtitle Subtitle</p>
@@ -11,22 +11,20 @@ const posts = await Astro.glob("../pages/posts/*.md");
       {
         posts.map((post) => (
           <article>
-            <div class="box m-2">
-              <a class="is-underlined is-size-3" href={post.url}>
-                {post.frontmatter.title}
-              </a>
+            <div class="box p-4 m-2 mt-5">
+              <button class="button is-info is-large is-inverted">
+                <a class="is-size-3 has-text-link-dark" href={post.url}>
+                  {post.frontmatter.title}
+                </a>
+              </button>
               <br />
-              <p>
-                {post.frontmatter.description}
-              </p>
-                <div>
-                  <a class="has-text-dark" href={post.url}>
-                    Read more
-                  </a>
-                </div>
-                <p>
-                  {post.frontmatter.date}
-                </p>
+              <p>{post.frontmatter.description}</p>
+              <div>
+                <a class="has-text-dark" href={post.url}>
+                  Read more
+                </a>
+              </div>
+              <p>{post.frontmatter.date}</p>
             </div>
           </article>
         ))
