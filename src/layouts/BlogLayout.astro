@@ -15,12 +15,12 @@ const { frontmatter } = Astro.props;
     <title>{frontmatter.title} | TSRP Blog</title>
   </head>
 
-  <body>
+  <body class="has-background-info-light">
     <header>
       <section class="hero is-info">
         <div class="hero-body">
           <p class="title">TSRP Blog</p>
-          <p class="subtitle has-text-centered is-underlined is-size-1">
+          <p class="subtitle has-text-centered is-size-2">
             {frontmatter.title}
           </p>
         </div>
@@ -28,7 +28,7 @@ const { frontmatter } = Astro.props;
     </header>
 
     <div
-      class="content has-text-centered is-size-3 has-background-info-light has-text-info m-0"
+      class="content is-size-4 has-text-grey m-0 mt-4 ml-5 mb-4 mr-5"
     >
       <slot />
     </div>
@@ -41,11 +41,13 @@ const { frontmatter } = Astro.props;
           Date created {frontmatter.date}.
         </p>
       </div>
-      <div class="buttons has-addons is-right">
-        <button class="button is-link is-light"
-          ><a href="/blog/">Blog一覧へ戻る</a></button
-        >
-      </div>
+      <a href="/blog/">
+        <div class="buttons has-addons is-right">
+          <button class="button is-link">
+            <p>Blog一覧へ戻る</p>
+          </button>
+        </div>
+      </a>
     </footer>
   </body>
 </html>
