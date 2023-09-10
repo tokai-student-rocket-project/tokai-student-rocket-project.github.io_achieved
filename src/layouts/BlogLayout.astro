@@ -1,29 +1,53 @@
 ---
-import type { MarkdownLayoutProps } from "astro";
-
-type Props = MarkdownLayoutProps<{
-  title: string;
-  author: string;
-  data: string;
-}>;
-
 const { frontmatter } = Astro.props;
 ---
 
-<!DOCTYPE html>
-<html lang="ja" class="">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>{frontmatter.title} | TSRP</title>
+    <title>{frontmatter.title} | TSRP Blog</title>
   </head>
-  <body>
-    <h2>書いた人: {frontmatter.author}</h2>
-    <slot />
-    
-    <p>投稿日: {frontmatter.data.slice(0, 10)}</p>
+
+  <body class="has-background-info-light">
+    <header>
+      <section class="hero is-info">
+        <div class="hero-body">
+          <p class="title">TSRP Blog</p>
+          <p class="subtitle has-text-centered is-size-2">
+            {frontmatter.title}
+          </p>
+        </div>
+      </section>
+    </header>
+
+    <div
+      class="content is-size-4 has-text-grey m-0 mt-4 ml-5 mb-4 mr-5"
+    >
+      <slot />
+    </div>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>{frontmatter.title}</strong> Written by {frontmatter.author}.
+          <br />
+          Date created {frontmatter.date}.
+        </p>
+      </div>
+      <a href="/blog/">
+        <div class="buttons has-addons is-right">
+          <button class="button is-link">
+            <p>Blog一覧へ戻る</p>
+          </button>
+        </div>
+      </a>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,54 @@
+---
+const posts = await Astro.glob("../pages/posts/*.md");
+
+---
+
+<section class="hero is-medium has-background-info-light">
+  <div class="hero-body">
+    <h1 
+    
+    class="title is-size-1"
+    style={{ borderBottom: "1px solid", paddingBottom: "0.25em" }}>
+    TSRP Blog
+  </h1>
+    <h2 class="subtitle">TSRPの日常や開発状況をお届けします!
+  </h2>
+
+    <div>
+      {
+        posts.map((post) => (
+          <article>
+            <div class="box p-4 m-2 mt-5">
+              <a class="has-text-white" href={post.url}>
+              <button class="button is-info is-large is-fullwidth">
+                  <p>{post.frontmatter.title}
+                  </p>
+              </button>
+            </a>
+              <br />
+              <section class="section">
+                <h1 class="subtitle">
+                  {post.frontmatter.description}
+                  </h1>
+                  <span>
+                    <h2 class="has-text-right">
+                      投稿日: {post.frontmatter.date}
+                    </h2>
+                  </span>
+              </section>
+              <a class="has-text-dark" href={post.url}>
+              <div class="buttons is-right">
+                <button class="button is-link is-fucused">
+                <p>
+                  Read more
+                </p>
+                </button>
+                </div>
+                </a>
+                
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
